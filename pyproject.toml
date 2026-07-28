@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyktok_2026"
+version = "0.2.0"
+description = "pyktok_2026 — ic2s2 demo."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Gayoung Jeon" },
+  { name = "Deen Freelon" },
+]
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: BSD License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+  "beautifulsoup4>=4.12.0",
+  "nest-asyncio>=1.5.0",
+  "pandas>=2.0.0",
+  "playwright>=1.40.0",
+  "playwright-stealth>=1.0.6",
+  "requests>=2.31.0",
+  "tqdm>=4.66.0",
+]
+
+[project.scripts]
+pyktok-setup = "pyktok_2026._setup:setup"
+
+[tool.hatch.build.targets.wheel]
+packages = ["pyktok_2026"]

@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Tooling
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Credentials (NEVER commit these)
+credential.env
+
+# pyktok runtime / scraped output (keep the repo clean of data)
+output/
+output_exhaustive/
+*.mp4
+*.csv
+!seed_video_urls.csv
+
+# auth + browser profile (never commit cookies)
+.pyktok_2026/
+state.json
+state.json.*
+
+# Keep sample_data for the tutorial
+!sample_data/
+!sample_data/*.csv
